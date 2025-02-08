@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('./colors.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--backgroud-color);
+    color: #333;
+    font-size: 14px;
+    line-height: 1.8;
+}
+main .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main .banner img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Botões com links */
+main .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 0;
+}
+main .icons a{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    height: 200px;
+    width: 200px;
+    text-decoration: none;
+    color: var(--text-color);
+    fill: var(--text-color);
+}
+
+main .icons a svg{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+main .icons a:hover{
+    background-color: var(--primary-color);
+    color: var(--white);
+    fill: var(--white);
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+main .icons a p{
+    font-size: 20px;
+    max-width: 100px;
+    word-wrap: break-word;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* Informativos */
+main .ultimos-informativos {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 50px 0;
+    color: var(--white);
+}
+
+main .ultimos-informativos .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 40px;
+    height: 60px;
+}
+
+main .ultimos-informativos .titulo h2 {
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+main .ultimos-informativos .titulo hr {
+    flex-grow: 10;
+    border: none;
+    border-top: 2px solid var(--white);
+    margin: 0 10px;
+}
+
+main .ultimos-informativos .informativo {
+    position: absolute;
+    top: 130px;
+    left: 100%;
+    width: 400px; /* Define a largura máxima */
+    max-width: 100%; /* Garante que a largura não ultrapasse 100% do contêiner */
+    transition: left 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00000050; /* Adiciona a cor de fundo */
+    padding: 20px; /* Adiciona espaço ao redor do texto */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    color: var(--white); /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+main .ultimos-informativos .informativo p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Número máximo de linhas */
+    line-clamp: 3; /* Número máximo de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 5em; /* Ajuste conforme necessário */
+}
+
+main .ultimos-informativos .informativo.active {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+main .ultimos-informativos .informativo.previous {
+    left: -100%;
+    opacity: 0;
+}

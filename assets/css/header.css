@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('./colors.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-bar{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 0;
+    width: 100%;
+    padding: 6px 60px;
+}
+.top-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-bar ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.top-bar ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 6px;
+}
+.top-bar ul li a img{
+    width: 30px;
+}
+
+.menu-bar{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--text-color);
+    width: 100%;
+    padding: 6px 60px;
+    gap: 20px;
+}
+.menu-bar .logo img{
+    width: 70px;
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.menu-bar ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu-bar ul li a,
+.menu-bar .admin a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 6px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 300ms;
+}
+.menu-bar ul li a:hover,
+.menu-bar .admin a:hover{
+    color: var(--white);
+}
+.menu-bar .admin{
+    margin-left: auto;
+}
