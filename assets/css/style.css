@@ -170,7 +170,7 @@ main .convite-pastoral p {
     line-height: 1.5;
     font-size: 18px;
 }
-main .convite-pastoral button {
+main .convite-pastoral a {
     margin-top: 30px;
     padding: 20px 150px;
     border: none;
@@ -183,7 +183,7 @@ main .convite-pastoral button {
     cursor: pointer;
     transition: 0.5s;
 }
-main .convite-pastoral button:hover {
+main .convite-pastoral a:hover {
     color: var(--white);
     transition: 0.5s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
