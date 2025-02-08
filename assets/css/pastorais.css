@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('./colors.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--body-color);
+    color: #333;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+main .pastorais-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .pastoral-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+main .pastoral-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+main .pastoral-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+main .pastoral-item .pastoral-text {
+    max-width: 650px;
+}
