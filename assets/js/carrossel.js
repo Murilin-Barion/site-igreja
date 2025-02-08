@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", function() {
     showInformativo(currentInformativo);
 
     // Alternar informativos a cada 5 segundos
-    setInterval(nextInformativo, 5000);
+    setInterval(nextInformativo, 10000);
 });

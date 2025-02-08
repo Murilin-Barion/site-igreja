@@ -9,7 +9,7 @@
 }
 
 body{
-    background: var(--backgroud-color);
+    background: var(--body-color);
     color: #333;
     font-size: 14px;
     line-height: 1.8;
@@ -146,4 +146,45 @@ main .ultimos-informativos .informativo.active {
 main .ultimos-informativos .informativo.previous {
     left: -100%;
     opacity: 0;
+}
+
+
+/* Convite Pastorais */
+main .convite-pastoral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    color: var(--text-color);
+}
+main .convite-pastoral h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+main .convite-pastoral p {
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+}
+main .convite-pastoral button {
+    margin-top: 30px;
+    padding: 20px 150px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.5s;
+}
+main .convite-pastoral button:hover {
+    color: var(--white);
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
 }
