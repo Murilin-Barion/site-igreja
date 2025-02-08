@@ -23,30 +23,41 @@ main {
     gap: 30px;
 }
 
-main .pastorais-container {
+main .cursos-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
 
-main .pastoral-item {
+main .curso-item {
     display: flex;
     align-items: center;
     gap: 50px;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 10px;
+}
+main .curso-item:hover {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    transition: 0.2s;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
 }
 
-main .pastoral-item img {
+main .curso-item img {
     width: 200px;
     height: auto;
     border-radius: 20px;
     box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
 }
 
-main .pastoral-item:nth-child(even) {
+main .curso-item:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-main .pastoral-item .pastoral-text {
+main .curso-item .curso-text {
     max-width: 650px;
 }
