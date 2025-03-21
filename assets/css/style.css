@@ -150,7 +150,8 @@ main .ultimos-informativos .informativo.previous {
 
 
 /* Convite Pastorais */
-main .convite-pastoral {
+main .convite-pastoral,
+main .convite-dizimo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,19 +159,22 @@ main .convite-pastoral {
     padding: 50px 0;
     color: var(--text-color);
 }
-main .convite-pastoral h2 {
+main .convite-pastoral h2,
+main .convite-dizimo h2 {
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 600;
     text-decoration: underline;
 }
-main .convite-pastoral p {
+main .convite-pastoral p,
+main .convite-dizimo p {
     max-width: 800px;
     text-align: center;
     line-height: 1.5;
     font-size: 18px;
 }
-main .convite-pastoral a {
+main .convite-pastoral a,
+main .convite-dizimo a {
     margin-top: 30px;
     padding: 20px 150px;
     border: none;
@@ -183,8 +187,13 @@ main .convite-pastoral a {
     cursor: pointer;
     transition: 0.5s;
 }
-main .convite-pastoral a:hover {
+main .convite-pastoral a:hover,
+main .convite-dizimo a:hover {
     color: var(--white);
     transition: 0.5s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+}
+
+main .convite-pastoral {
+    border-top: #333 1px solid;
 }
