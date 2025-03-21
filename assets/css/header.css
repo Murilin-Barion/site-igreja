@@ -25,6 +25,10 @@
     display: inline-block;
     font-size: 14px;
 }
+.top-bar ul li address{
+    font-weight: 300;
+    font-style: normal;
+}
 .top-bar ul li a{
     text-decoration: none;
     color: var(--text-color);

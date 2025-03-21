@@ -23,14 +23,14 @@ main {
     gap: 30px;
 }
 
-main .cursos-container {
+main .catequeses-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
 
-main .curso-item {
+main .catequese-item {
     display: flex;
     align-items: center;
     gap: 50px;
@@ -40,24 +40,24 @@ main .curso-item {
     border: 1px solid transparent;
     padding: 10px;
 }
-main .curso-item:hover {
+main .catequese-item:hover {
     color: var(--text-color);
     border: 1px solid var(--text-color);
     transition: 0.2s;
     box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
 }
 
-main .curso-item img {
+main .catequese-item img {
     width: 200px;
     height: auto;
     border-radius: 20px;
     box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
 }
 
-main .curso-item:nth-child(even) {
+main .catequese-item:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-main .curso-item .curso-text {
+main .catequese-item .catequese-text {
     max-width: 650px;
 }

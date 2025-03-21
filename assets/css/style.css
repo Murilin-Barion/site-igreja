@@ -65,7 +65,7 @@ main .icons a:hover{
 }
 main .icons a p{
     font-size: 20px;
-    max-width: 100px;
+    max-width: 150px;
     word-wrap: break-word;
     font-weight: 600;
     text-align: center;
