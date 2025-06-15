@@ -1,22 +1,14 @@
 [
   {
-    "titulo": "Campanha de Natal 2024",
-    "data": "10/01/2025",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "data": "05/06/2025",
+    "titulo": "Campanha de Doação de Agasalhos",
+    "conteudo": "Agradecemos a todos que participaram da nossa Campanha de Doação de Agasalhos. Arrecadamos mais de 500 peças que serão distribuídas para famílias carentes da comunidade.",
+    "editado": "06/06/2025"
   },
   {
-    "titulo": "Arrecadação de Alimentos",
-    "data": "15/02/2025",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "titulo": "Campanha de Vacinação",
-    "data": "05/04/2025",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "titulo": "Doação de Sangue",
-    "data": "10/05/2025",
-    "conteudo": "Coletamos 150 bolsas de sangue para o banco local."
+    "data": "15/04/2025",
+    "titulo": "Mutirão de Limpeza da Comunidade",
+    "conteudo": "Nosso mutirão de limpeza foi um sucesso! Agradecemos a todos os voluntários que dedicaram seu tempo para deixar nossa comunidade mais bonita e acolhedora.",
+    "editado": "16/04/2025"
   }
 ]
