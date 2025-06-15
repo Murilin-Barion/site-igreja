@@ -1,14 +1,44 @@
 [
+    {
+    "data": "15/06/2025",
+    "titulo": "Doação de Alimentos para moradores de rua",
+    "conteudo": "Entregamos marmitas com sopa para pessoas em situação de rua no centro da cidade. Agradecemos aos voluntários da ação.",
+    "editado": "16/06/2025"
+  },
   {
     "data": "05/06/2025",
     "titulo": "Campanha de Doação de Agasalhos",
     "conteudo": "Agradecemos a todos que participaram da nossa Campanha de Doação de Agasalhos. Arrecadamos mais de 500 peças que serão distribuídas para famílias carentes da comunidade.",
-    "editado": "06/06/2025"
+    "editado": ""
+  },
+  {
+    "data": "25/05/2025",
+    "titulo": "Mutirão da Saúde no Centro",
+    "conteudo": "Realizamos atendimentos básicos de saúde e orientação com médicos voluntários da comunidade. Mais de 80 pessoas foram atendidas.",
+    "editado": "26/05/2025"
   },
   {
     "data": "15/04/2025",
     "titulo": "Mutirão de Limpeza da Comunidade",
     "conteudo": "Nosso mutirão de limpeza foi um sucesso! Agradecemos a todos os voluntários que dedicaram seu tempo para deixar nossa comunidade mais bonita e acolhedora.",
-    "editado": "16/04/2025"
+    "editado": ""
+  },
+  {
+    "data": "30/03/2025",
+    "titulo": "Café Solidário na Praça Central",
+    "conteudo": "Servimos café da manhã para moradores de rua, junto com mensagens de fé e acolhimento espiritual.",
+    "editado": ""
+  },
+  {
+    "data": "12/03/2025",
+    "titulo": "Entrega de Cestas Básicas às Famílias Carentes",
+    "conteudo": "Graças às doações recebidas, conseguimos distribuir 60 cestas básicas para famílias em situação de vulnerabilidade social.",
+    "editado": "13/03/2025"
+  },
+  {
+    "data": "20/02/2025",
+    "titulo": "Oficina de Capacitação para Jovens",
+    "conteudo": "Promovemos oficinas gratuitas de informática e empreendedorismo para jovens da comunidade, incentivando a educação e autonomia.",
+    "editado": ""
   }
 ]
