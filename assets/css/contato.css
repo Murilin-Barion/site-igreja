@@ -56,3 +56,81 @@ main .contatos .contato p {
     font-size: 1.2rem;
     font-weight: 500;
 }
+
+/* Media Queries para Responsividade */
+
+/* Tablets */
+@media (max-width: 768px) {
+    main {
+        padding: 40px 30px;
+        gap: 25px;
+    }
+    
+    main h1 {
+        font-size: 1.8rem;
+    }
+    
+    main .contatos {
+        gap: 25px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    main .contatos .contato {
+        justify-content: center;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+    }
+    
+    main .contatos .contato:hover {
+        background-color: rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+    }
+    
+    main .contatos .contato img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    main .contatos .contato p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    main {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+    
+    main h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    main .contatos {
+        gap: 20px;
+        width: 100%;
+    }
+    
+    main .contatos .contato {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+    
+    main .contatos .contato img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    main .contatos .contato p {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+}
+

@@ -67,7 +67,7 @@
     color: var(--text-color);
     margin: 0 6px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     transition: 300ms;
 }
 .menu-bar ul li a:hover,
@@ -77,3 +77,144 @@
 .menu-bar .admin{
     margin-left: auto;
 }
+
+/* Menu Hambúrguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .top-bar {
+        padding: 6px 30px;
+    }
+    
+    .top-bar ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .top-bar ul li {
+        font-size: 12px;
+    }
+    
+    .top-bar ul li a img {
+        width: 25px;
+    }
+    
+    .menu-bar {
+        padding: 6px 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .menu-bar .logo img {
+        width: 60px;
+    }
+    
+    .menu-bar ul {
+        gap: 15px;
+    }
+    
+    .menu-bar ul li a,
+    .menu-bar .admin a {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .top-bar {
+        padding: 6px 15px;
+    }
+    
+    .top-bar ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .top-bar ul li {
+        font-size: 11px;
+    }
+    
+    .top-bar ul li a img {
+        width: 20px;
+    }
+    
+    .menu-bar {
+        padding: 10px 15px;
+        position: relative;
+    }
+    
+    .menu-bar .logo img {
+        width: 50px;
+    }
+    
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+    
+    .menu-bar ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    
+    .menu-bar ul.active {
+        display: flex;
+    }
+    
+    .menu-bar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .menu-bar ul li a {
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+    }
+    
+    .menu-bar .admin {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+        border-top: 1px solid var(--text-color);
+        padding-top: 15px;
+    }
+}
+

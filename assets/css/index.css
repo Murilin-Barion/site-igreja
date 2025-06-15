@@ -26,53 +26,6 @@ main .banner img{
 }
 
 
-/* Botões com links */
-main .icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 70px 0;
-}
-main .icons a{
-    display: flex;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-color);
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
-    height: 200px;
-    width: 200px;
-    text-decoration: none;
-    color: var(--text-color);
-    fill: var(--text-color);
-}
-
-main .icons a svg{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-}
-
-main .icons a:hover{
-    background-color: var(--primary-color);
-    color: var(--white);
-    fill: var(--white);
-    transition: 0.5s;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-main .icons a p{
-    font-size: 20px;
-    max-width: 150px;
-    word-wrap: break-word;
-    font-weight: 600;
-    text-align: center;
-    line-height: 1.5;
-}
-
-
 /* Informativos */
 main .ultimos-informativos {
     position: relative;
@@ -80,7 +33,7 @@ main .ultimos-informativos {
     height: 350px;
     display: flex;
     justify-content: center;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     padding: 50px 0;
     color: var(--white);
 }
@@ -97,12 +50,13 @@ main .ultimos-informativos .titulo {
 main .ultimos-informativos .titulo h2 {
     margin: 0 10px;
     white-space: nowrap;
+    color: var(--text-color);
 }
 
 main .ultimos-informativos .titulo hr {
     flex-grow: 10;
     border: none;
-    border-top: 2px solid var(--white);
+    border-top: 2px solid var(--text-color);
     margin: 0 10px;
 }
 
@@ -150,7 +104,11 @@ main .ultimos-informativos .informativo.previous {
 
 
 /* Convite Pastorais */
-main .convite-pastoral,
+main .convite-dizimo{
+    background-color: var(--primary-color);
+}
+
+main .contato-duvidas,
 main .convite-dizimo {
     display: flex;
     justify-content: center;
@@ -159,21 +117,21 @@ main .convite-dizimo {
     padding: 50px 0;
     color: var(--text-color);
 }
-main .convite-pastoral h2,
+main .contato-duvidas h2,
 main .convite-dizimo h2 {
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 600;
     text-decoration: underline;
 }
-main .convite-pastoral p,
+main .contato-duvidas p,
 main .convite-dizimo p {
     max-width: 800px;
     text-align: center;
     line-height: 1.5;
     font-size: 18px;
 }
-main .convite-pastoral a,
+main .contato-duvidas a,
 main .convite-dizimo a {
     margin-top: 30px;
     padding: 20px 150px;
@@ -186,14 +144,126 @@ main .convite-dizimo a {
     text-decoration: underline;
     cursor: pointer;
     transition: 0.5s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
 }
-main .convite-pastoral a:hover,
+main .contato-duvidas a:hover,
 main .convite-dizimo a:hover {
     color: var(--white);
     transition: 0.5s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
 }
 
-main .convite-pastoral {
-    border-top: #333 1px solid;
+/* Media Queries para Responsividade */
+
+/* Tablets */
+@media (max-width: 768px) {
+    main .ultimos-informativos {
+        height: auto;
+        min-height: 300px;
+        padding: 30px 20px;
+    }
+    
+    main .ultimos-informativos .informativo {
+        width: 90%;
+        max-width: 350px;
+        top: 100px;
+        padding: 15px;
+    }
+    
+    main .ultimos-informativos .titulo h2 {
+        font-size: 24px;
+    }
+    
+    main .convite-dizimo h2,
+    main .contato-duvidas h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    main .convite-dizimo p,
+    main .contato-duvidas p {
+        font-size: 16px;
+        max-width: 90%;
+        padding: 0 20px;
+    }
+    
+    main .convite-dizimo a,
+    main .contato-duvidas a {
+        padding: 15px 80px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
 }
+
+/* Mobile */
+@media (max-width: 480px) {
+    main .banner img {
+        width: 100%;
+        height: auto;
+    }
+    
+    main .ultimos-informativos {
+        height: auto;
+        min-height: 250px;
+        padding: 20px 10px;
+    }
+    
+    main .ultimos-informativos .titulo {
+        margin: 0 20px;
+        height: 50px;
+    }
+    
+    main .ultimos-informativos .titulo h2 {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    
+    main .ultimos-informativos .informativo {
+        width: 95%;
+        max-width: 300px;
+        top: 80px;
+        padding: 10px;
+    }
+    
+    main .ultimos-informativos .informativo h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    main .ultimos-informativos .informativo p {
+        font-size: 14px;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        max-height: 3em;
+    }
+    
+    main .convite-dizimo,
+    main .contato-duvidas {
+        padding: 30px 15px;
+    }
+    
+    main .convite-dizimo h2,
+    main .contato-duvidas h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    main .convite-dizimo p,
+    main .contato-duvidas p {
+        font-size: 14px;
+        max-width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+    
+    main .convite-dizimo a,
+    main .contato-duvidas a {
+        padding: 12px 40px;
+        font-size: 16px;
+        margin-top: 15px;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
